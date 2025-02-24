@@ -36,7 +36,7 @@
             </div>
             
             <div class="form__input--text">
-              <input type="text" name="name" placeholder="例：山田" />
+              <input type="text" name="name" placeholder="例：太郎" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->

@@ -1,5 +1,5 @@
 .header {
-    background: #000;
+    background:red;
 }
 
 .header__inner {
@@ -9,7 +9,7 @@
 }
 
 .header__logo {
-    color: #fff;
+    color: #655e5e;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -43,7 +43,7 @@
     padding: 4px 6px;
     border-radius: 3px;
     background: #fafafa;
-    color: #aaa;
+    color: #f60404;
 }
 
 .form__error {
