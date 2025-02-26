@@ -1,19 +1,20 @@
 .header {
-    background:rgb(247, 243, 243);
+    background:white;
 }
 
 .header__inner {
     margin: 0 auto;
     padding: 20px 15px;
     max-width: 1230px;
+    text-align: center;
 }
 
 .header__logo {
     color: #655e5e;
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
 }
 
 .contact-form__content {
@@ -31,13 +32,19 @@
 .form {
     margin: 0 auto;
     width: 70%;
-    text-align: center;
+
+
 }
 
 .form__group {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    
+    
 }
 
 .form__label--required {
@@ -58,22 +65,26 @@
 .form__input--textarea textarea {
     padding: 10px;
     width: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(207, 161, 161, 0.867);
     border-radius: 3px;
 
     appearance: none;
+
 }
 
 .form__input--text input {
     height: 40px;
+    
 }
 
 .form__input--textarea textarea {
     height: 180px;
+    
 }
 
 .form__button {
     margin-top: 30px;
+    text-align: center;
 }
 
 .form__button-submit {
@@ -82,7 +93,9 @@
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: rgba(173, 136, 136, 0.867);
     color: #fff;
     cursor: pointer;
+    text-align: center;
+
 }
