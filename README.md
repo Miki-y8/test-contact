@@ -28,7 +28,7 @@ DB_PASSWORD=Laravel_pass
 ・laravel 8.83
 
 ## ER図
-/Users/miki/coachtech/test-contact/contact-form/contact.drawio.png
+
 
 ## URL
 ・開発環境:http://localhost/
