@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        FashionablyLate
       </a>
     </div>
   </header>
@@ -22,7 +22,7 @@
   <main>
     <div class="confirm__content">
       <div class="confirm__heading">
-        <h2>お問い合わせ内容確認</h2>
+        <h2>Confirm</h2>
       </div>
       <form class="form" action="/contacts" method="post">
         @csrf
@@ -31,13 +31,13 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>
               <td class="confirm-table__text">
-                <input type="text" name="name" value="{{ $contact['name'] }}"readonly />
+                <input type="text" name="first_name" value="{{ $contact['first_name'] }}"readonly />
               </td>
             </tr>
             <tr class="confirm-table__row">
               <th class="confirm-table__header">性別</th>
               <td class="confirm-table__text">
-                <input type="email" name="sex" value="{{ $contact['sex'] }}"readonly />
+                <input type="email" name="gender" value="{{ $contact['gender'] }}"readonly />
                 </td>
             </tr>
             <tr class="confirm-table__row">
@@ -62,14 +62,12 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">建物名</th>
               <td class="confirm-table__text">
-                <input type="building name" name="building name" value="{{ $contact['building name'] }}"readonly />
+                <input type="text" name="building" value="{{ $contact['building'] }}"readonly />
               </td>
             </tr>
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問合せの種類</th>
-              <td class="confirm-table__text">
-                <input type="select" name="select" value="{{ $contact['select'] }}"readonly />
-              </td>
+              <div name="select"></div>
             </tr>
 
             <tr class="confirm-table__row">
@@ -82,6 +80,9 @@
         </div>
         <div class="form__button">
           <button class="form__button-submit" type="submit">送信</button>
+        </div>
+        <div class="form__button">
+          <button class="form__button-submit" type="submit">修正</button>
         </div>
       </form>
     </div>
