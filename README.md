@@ -1,7 +1,23 @@
 # お問い合わせフォーム
 ## 環境構築
 1 git clone ()
-2 
+2 docker-compose up -d --build
+3 docker-compose exec php bash
+4 composer install
+5 cp .env.example .env
+  データベースの環境変数を変更
+
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=Laravel_user
+DB_PASSWORD=Laravel_pass
+
+6 php artisan key:generate
+7 php artisan migrate
+8 php artisan db:seed
+
 ## 使用技術(実行環境)
 ・ nginx 1.21.1 
 
@@ -9,8 +25,13 @@
 
 ・ MySQL 8.0
 
-## ER図
-## URL
-・開発環境:
+・laravel 8.83
 
-・phpMyAdmin:
+## ER図
+![ER](https://github.com/user-attachments/assets/4fb062e8-5401-484a-8433-0af51c2fe4d4)
+
+
+## URL
+・開発環境:http://localhost/
+
+・phpMyAdmin:http://localhost:8080/
