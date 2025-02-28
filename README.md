@@ -28,7 +28,7 @@ DB_PASSWORD=Laravel_pass
 ・laravel 8.83
 
 ## ER図
-![ER](https://github.com/user-attachments/assets/82b200f8-1bf2-4d81-8baf-f4ae4b52d92b)
+![ER図](https://github.com/user-attachments/assets/6bc663a4-028f-4cf0-9b72-5c44ec459091)
 
 
 ## URL
